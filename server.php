@@ -2,7 +2,29 @@
 
 
 $disc_string = file_get_contents('dischi.json');
-var_dump($disc_string);
+// var_dump($disc_string);
 
 $lista_disc = json_decode($disc_string);
-var_dump($lista_disc);
+// var_dump($lista_disc);
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+header('Content-Type: application/json');
+
+echo json_encode($lista_disc);
