@@ -1,11 +1,13 @@
-const { createApp } = Vue
+console.log('PHP Dischi JSON');
+
+const { createApp } = Vue;
 
 createApp({
 
   data(){
     return{
       title: 'PHP Dischi JSON',
-      apiUrl: 'server.php',
+      apiUrl: 'server.php'
     }
   },
 
