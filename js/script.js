@@ -7,7 +7,8 @@ createApp({
   data(){
     return{
       title: 'PHP Dischi JSON',
-      apiUrl: 'server.php'
+      apiUrl: 'server.php',
+      lista_disc: []
     }
   },
 
@@ -15,6 +16,7 @@ createApp({
     getApi(){
       axios.get(this.apiUrl)
       .then(result => {
+        this.lista_disc = result.data;
         console.log(result.data);
       })
     }
