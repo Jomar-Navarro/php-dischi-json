@@ -12,7 +12,7 @@ createApp({
       newDisc: {
         title: '',
         author: '',
-        poster: '',
+        poster: './assets/img/logo-spotify.png',
         year: '',
         genre: '',
       }
@@ -33,7 +33,7 @@ createApp({
       const data = new FormData();
       data.append('newDiscTitle', this.newDisc.title);
       data.append('newDiscAuthor', this.newDisc.author);
-      data.append('newDiscPoster', this.newDisc.genre);
+      data.append('newDiscPoster', this.newDisc.poster);
       data.append('newDiscYear', this.newDisc.year);
       data.append('newDiscGenre', this.newDisc.genre);
 

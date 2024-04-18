@@ -43,6 +43,11 @@
           </div>
 
           <div class="d-flex flex-column mx-2">
+            <label class="form-label" for="poster">Poster</label>
+            <input v-model.trim="newDisc.poster" class="form-control" type="text" name="poster">
+          </div>
+
+          <div class="d-flex flex-column mx-2">
             <label class="form-label" for="year">Year</label>
             <input v-model.trim="newDisc.year" class="form-control" type="text" name="year">
           </div>
