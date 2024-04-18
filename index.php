@@ -53,7 +53,7 @@
           </div>
 
           <div class=" d-flex align-items-end">
-            <button class="btn btn-success ">Aggiungi</button>
+            <button @click.stop="addNewDisc" class="btn btn-success ">Aggiungi</button>
           </div>
         </div>
 
