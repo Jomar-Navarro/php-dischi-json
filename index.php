@@ -29,6 +29,34 @@
       <div class="container my-5 text-center">
 
         <h1 class="text-white">{{ title }}</h1>
+
+        <div class="text-white d-flex justify-content-center">
+
+          <div class="d-flex flex-column mx-2">
+            <label class="form-label" for="">Title</label>
+            <input class="form-control" type="text" name="">
+          </div>
+
+          <div class="d-flex flex-column mx-2">
+            <label class="form-label" for="">Author</label>
+            <input class="form-control" type="text" name="">
+          </div>
+
+          <div class="d-flex flex-column mx-2">
+            <label class="form-label" for="">Year</label>
+            <input class="form-control" type="text" name="">
+          </div>
+
+          <div class="d-flex flex-column mx-2">
+            <label class="form-label" for="">Genre</label>
+            <input class="form-control" type="text" name="">
+          </div>
+
+          <div class=" d-flex align-items-end">
+            <button class="btn btn-success ">Crea</button>
+          </div>
+        </div>
+
         <div class="d-flex flex-wrap justify-content-center">
           <div v-for="(item,index) in lista_disc" :key="index" class="card m-4 d-flex justify-content-center align-items-center" style="width: 18rem">
             <img :src="item.poster" class="card-img-top p-3" alt="item.poster" />
