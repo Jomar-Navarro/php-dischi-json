@@ -70,8 +70,10 @@
               <h6 class="card-subtitle mb-2">{{ item.author }}</h6>
               <h6 class="card-subtitle mb-2">{{ item.year }}</h6>
               <p class="card-text">{{ item.genre }}</p>
+              <button class="btn btn-danger">Remove</button>
             </div>
           </div>
+
         </div>
 
       </div>
