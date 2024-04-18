@@ -45,6 +45,17 @@ createApp({
         this.lista_disc = result.data;
       })
     },
+
+    removeDisc(index){
+      console.log(index);
+      const data = new FormData();
+      data.append('indexToDelete', index);
+
+      axios.post(this.apiUrl, data)
+      .then(result =>{
+        this.list = result.data
+      })
+    }
   },
 
   mounted(){

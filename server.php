@@ -20,6 +20,12 @@ if (isset($_POST['newDiscTitle'])) {
   file_put_contents('dischi.json', json_encode($lista_disc));
 }
 
+if (isset($_POST['indexToDelete'])) {
+  $indexToDelete = $_POST['indexToDelete'];
+  array_splice($lista_disc, $indexToDelete, 1);
+  file_put_contents('dischi.json', json_encode($lista_disc));
+}
+
 header('Content-Type: application/json');
 
 echo json_encode($lista_disc);

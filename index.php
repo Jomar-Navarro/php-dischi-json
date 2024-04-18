@@ -74,7 +74,7 @@
               <p class="card-text">{{ item.genre }}</p>
               <button class="btn btn-outline-light"><i class="fa-regular fa-thumbs-up"></i></button>
               <button class="btn btn-outline-info mx-3"><i class="fa-solid fa-share-from-square"></i></button>
-              <button class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
+              <button @click.stop="removeDisc(index)" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
             </div>
           </div>
 
