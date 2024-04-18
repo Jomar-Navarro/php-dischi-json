@@ -29,7 +29,7 @@ createApp({
     },
 
     addNewDisc(){
-      console.log(this.newDisc);
+      // console.log(this.newDisc);
       const data = new FormData();
       data.append('newDiscTitle', this.newDisc.title);
       data.append('newDiscAuthor', this.newDisc.author);
@@ -38,6 +38,12 @@ createApp({
       data.append('newDiscGenre', this.newDisc.genre);
 
       console.log(data);
+
+      axios.post(this.apiUrl, data)
+      .then(result =>{
+        console.log(result.data);
+        this.lista_disc = result.data;
+      })
     },
   },
 
