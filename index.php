@@ -33,23 +33,23 @@
         <div class="text-white d-flex justify-content-center">
 
           <div class="d-flex flex-column mx-2">
-            <label class="form-label" for="">Title</label>
-            <input class="form-control" type="text" name="">
+            <label class="form-label" for="title">Title</label>
+            <input v-model.trim="newDisc.title" class="form-control" type="text" name="title">
           </div>
 
           <div class="d-flex flex-column mx-2">
-            <label class="form-label" for="">Author</label>
-            <input class="form-control" type="text" name="">
+            <label class="form-label" for="author">Author</label>
+            <input v-model.trim="newDisc.author" class="form-control" type="text" name="author">
           </div>
 
           <div class="d-flex flex-column mx-2">
-            <label class="form-label" for="">Year</label>
-            <input class="form-control" type="text" name="">
+            <label class="form-label" for="year">Year</label>
+            <input v-model.trim="newDisc.year" class="form-control" type="text" name="year">
           </div>
 
           <div class="d-flex flex-column mx-2">
-            <label class="form-label" for="">Genre</label>
-            <input class="form-control" type="text" name="">
+            <label class="form-label" for="genre">Genre</label>
+            <input v-model.trim="newDisc.genre" class="form-control" type="text" name="genre">
           </div>
 
           <div class=" d-flex align-items-end">

@@ -8,7 +8,14 @@ createApp({
     return{
       title: 'PHP Dischi JSON',
       apiUrl: 'server.php',
-      lista_disc: []
+      lista_disc: [],
+      newDisc: {
+        title: '',
+        author: '',
+        poster: '',
+        year: '',
+        genre: '',
+      }
     }
   },
 
