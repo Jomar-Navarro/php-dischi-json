@@ -11,6 +11,8 @@
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <!-- Css -->
   <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Font Awesome -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' integrity='sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==' crossorigin='anonymous' />
   <title>PHP Dischi JSON</title>
 </head>
 
@@ -70,7 +72,9 @@
               <h6 class="card-subtitle mb-2">{{ item.author }}</h6>
               <h6 class="card-subtitle mb-2">{{ item.year }}</h6>
               <p class="card-text">{{ item.genre }}</p>
-              <button class="btn btn-danger">Remove</button>
+              <button class="btn btn-outline-light"><i class="fa-regular fa-thumbs-up"></i></button>
+              <button class="btn btn-outline-info mx-3"><i class="fa-solid fa-share-from-square"></i></button>
+              <button class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
             </div>
           </div>
 
