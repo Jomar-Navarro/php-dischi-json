@@ -12,7 +12,7 @@ createApp({
       newDisc: {
         title: '',
         author: '',
-        poster: './assets/img/logo-spotify.png',
+        poster: '',
         year: '',
         genre: '',
       }
@@ -56,7 +56,7 @@ createApp({
   
         axios.post(this.apiUrl, data)
         .then(result =>{
-          this.list = result.data
+          this.lista_disc = result.data;
         })
       }
     }
