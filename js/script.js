@@ -47,14 +47,18 @@ createApp({
     },
 
     removeDisc(index){
-      console.log(index);
-      const data = new FormData();
-      data.append('indexToDelete', index);
+      
+      const discToDelete = this.lista_disc[index];
 
-      axios.post(this.apiUrl, data)
-      .then(result =>{
-        this.list = result.data
-      })
+      if(confirm(`Sei sicuro di voler eliminare il disco ${discToDelete.title}?`)){
+        const data = new FormData();
+        data.append('indexToDelete', index);
+  
+        axios.post(this.apiUrl, data)
+        .then(result =>{
+          this.list = result.data
+        })
+      }
     }
   },
 
